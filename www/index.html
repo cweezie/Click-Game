@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+    
+    <script>
+        //function pizza(){
+        //    document.write("pepperoni");
+        //}
+        //function bread(){
+        //    alert("garlic");
+        //}
+       // document.getElementById("blue").innerHTML = "hey now";
+       
+     </script>
+</head>
+<body>
+	<br />
+    <!--<button class="button button1" onClick="pizza()">pizza</button>
+    <br/>
+    <br/>
+    <button class="button button2" onClick="bread()">bread</button>-->
+    
+    <h1>Corin's Click Game</h1>
+    
+    <h3>Points:  <span id="gamepoints">0</span></h3>
+    <p>Color Changes: <span id="timesColorChange"> 0</span><br /></p>
+    <div onClick="shapeClick(1)">
+        <svg width="100" height="100">
+            <circle id="cir" cx="50" cy="50" r="40" stroke-width="4" fill="red" />
+        </svg>
+    </div>
+    
+    <div id="clickIcon"></div>
+    <button class="button button4" onClick="buyColor()">Buy</button>
+    
+    <p>Next Color Change: <span id="colorCost">10</span></p>
+    <br />
+    <button class="button button1" onClick="save()">Save</button>
+    <button class="button button2" onClick="load()">Load</button>
+    <button class="button button3" onClick="startOver()">Start Over</button>
+    
+</body>
+</html>
